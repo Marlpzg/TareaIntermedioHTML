@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h1>Formulario de Registro</h1>
+	
+	<form method="POST" action="#">
+	<fieldset>
+		<legend>Formulario</legend>
+
+		<fieldset style="width: 47.45%; display: inline-block;">
+
+			<legend>Datos personales</legend>
+
+			<table>
+				<tr>
+					<td><label for="nombre">Nombre: </label></td>
+					<td><input type="text" name="nombre" id="nombre" pattern="[A-Za-z]{3,50}" title="Solo se permiten letras" placeholder="Rolando" style="width: 20em;" required></td>
+				</tr>
+				<tr>
+					<td><label for="fechaNac">Fecha de Nacimiento:</label></td>
+					<td><input type="date" name="fechaNac" id="fechaNac" required></td>
+				</tr>
+				<tr>
+					<td><label for="animal">¿Cuál es tu animal favorito? </label></td>
+					<td><input type="text" name="animal" id="animal" placeholder="Gato" style="width: 20em;" required></td>
+				</tr>
+			</table>
+
+		</fieldset>
+
+		<fieldset style="width: 47.45%; display: inline-block;">
+
+			<legend>Cuenta</legend>
+
+			<table>
+				<tr>
+					<td><label for="correo">Correo: </label></td>
+					<td><input type="email" name="correo" id="correo" placeholder="Rolando@example.com" style="width: 20em;" required></td>
+				</tr>
+				<tr>
+					<td><label for="contra1">Contraseña:</label></td>
+					<td>
+						<input type="password" name="contra1" id="contra1" placeholder="*****************" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" title="La contraseña debe contener al menos una letra mayúscula, una minúscula y números (Al menos 8 caracteres)" style="width: 20em;" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="contra2">Verifica tu contraseña:</label></td>
+					<td>
+						<input type="password" name="contra2" id="contra2" placeholder="*****************" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" title="La contraseña debe contener al menos una letra mayúscula, una minúscula y números (Al menos 8 caracteres)" style="width: 20em;" required>
+					</td>
+				</tr>
+			</table>
+
+		</fieldset>
+		<fieldset style="width: 75%; display: inline-block;">
+
+			<legend>Contacto</legend>
+
+			<table>
+				<tr>
+					<td><label for="direccion">Dirección: </label></td>
+					<td>
+						<input type="text" name="direccion" id="direccion" placeholder="Colonia El Manguito, Pje. 6, Casa #8" style="width: 20em;" required>
+					</td>
+					<td><label for="tel">Teléfono: </label></td>
+					<td>
+						<input type="tel" name="tel" id="tel" placeholder="22345678" pattern="\d{8,8}" title="El número de teléfono debe contener 8 dígitos." maxlength="8" minlength="8" style="width: 20em;" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="ciudad">Ciudad: </label></td>
+					<td>
+						<input type="text" name="ciudad" id="ciudad" placeholder="Antiguo Cuscatlán" style="width: 20em;" required>
+					</td>
+					<td><label for="pais">País: </label></td>
+					<td>
+						<input type="text" name="pais" id="pais" placeholder="El Salvador"style="width: 20em;" required>
+					</td>
+				</tr>
+			</table>
+
+		</fieldset>
+
+		<fieldset style="width: 19.8%; display: inline-block;">
+
+			<legend>Finalizar</legend>
+
+			<table>
+				<tr>
+					<td><input type="submit" name="Enviar" value="Enviar Formulario" style="width: 15em"></td>
+				</tr>
+				<tr>
+					<td><input type="reset" name="Limpiar" value="Limpiar Formulario" style="width: 15em"></td>
+				</tr>
+			</table>
+
+		</fieldset>
+
+	</fieldset>
+
+	</form>
+</body>
+</html>
